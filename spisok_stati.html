@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!-- saved from url=(0014)about:internet -->
+	<title>Верстка шаблона для отдельного стихотворения</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/mystyle.css" rel="stylesheet">
+	<script src="scripts.js"></script>
+	<meta name="viewport" content="initial-scale=1, width=device-width">
+</head>
+<body>
+	<div id="wraper">
+		<header>
+			<a href="http://prostovix.info" title="Перейти на главную">
+				<img src="img/vix_log.png" alt="Логотип Современные стихи от Викса">
+			</a>
+			<h2>Современные стихи от Викса</h2>
+
+			<nav>
+				<ul>
+					<li><a href="spisok_stihi.html">Стихи</a></li>
+					<li><a href="spisok_stati.html">Статьи</a></li>
+					<li><a href="#">Об авторе</a></li>
+				</ul>
+			</nav>
+
+			<div id="search_stihi">
+				<form action="#">
+					<input type="text" placeholder="Хочу найти...">
+					<button type="submit" id="btn_search_stihi">
+						<img src="img/search-icon.png" alt="поиск стихов">
+					</button>
+				</form>
+			</div>
+
+		</header>
+
+
+		<section>
+			<p>Статьи / </p>
+
+			<div class="proza">
+
+
+				<h2>Что входит в состав растворимого кофе?</h2> <!-- начало инфорации в БД -->
+
+				<p>Вы хоть раз читал состав, написанный на маленьких пакетиках с растворимым кофе?</p>
+				<p>Если нет, то эта статья именно для Вас.</p>
+				<p>В ней перечисляются несколько видов растворимого кофе и по каждому из них представлена информация, которая печатается на пакетиках мелким шрифтом.</p>
+				<p class="stihi_more"><a href="single_stati.html">Читать полностью...</a></p>
+
+				<h2>Каким должен быть идеальный руководитель?</h2> 
+
+				<p>Кто такой идеальный руководитель? Как им стать? К чему стремиться?</p>
+				<p>Чем отличается идеальный руководитель от простого подчиненного?</p>
+				<p>Хотите знать об этом больше?</p>
+				<p>Тогда эта статья именно для Вас!</p>
+				<p class="stihi_more"><a href="single_stati.html">Читать полностью...</a></p>
+
+				<h2>Может ли человек дышать жидкостью?</h2> 
+
+				<p>Как Вы думаете: Человек может дышать жидкостью вместо воздуха?</p>
+				<p>Вы об этом где-то слышали или читали у Дэна Брауна в книге "Утраченный символ"?</p>
+				<p>Хотите знать об этом больше?</p>
+				<p>Тогда эта статья именно для Вас!</p>
+				<p class="stihi_more"><a href="single_stati.html">Читать полностью...</a></p>
+
+
+			</div> <!-- END proza -->
+
+		
+		</section>
+
+		<aside class="clearfix">
+			
+
+			<div id="search_year_theme">
+				<p>Стихи по дате:</p>
+				<select name="search_year" id="search_year">
+					<option value="sel">-- выбрать --</option>
+					<option value="2017">2017</option>
+					<option value="2016">2016</option>
+					<option value="2015">2015</option>
+				</select>
+
+				<br>
+
+				<p>Стихи по теме:</p>
+				<select name="search_theme" id="search_theme">
+					<option value="sel">-- выбрать --</option>
+					<option value="basnya">басня</option>
+					<option value="lirika">лирика</option>
+					<option value="4strochki">в 4 строчки</option>
+				</select>
+
+			</div>
+
+
+			<div id="stihi_podpiska">
+				<p><span>Подписаться на рассылку</span></p>
+				<p>Хисти от Vixa (Викса):</p>
+				<form action="#">
+					<input type="text" placeholder="Введите свой e-mail">
+					<button type="submit">OK</button>
+				</form>
+			</div>
+
+
+		</aside>
+
+		<footer>
+			<p>ВНИМАНИЕ!!!</p>
+			<p>Все права на материалы сайта принадлежат Викс©2009-2017 охраняются в соответствии с законодательством Украины.
+			При любом использовании материалов сайта на других сайтах обязательно указывается гиперссылка на источник www.prostovix.info.
+			Запрещается изменять содержание текста оригинала. При использовании материалов в мобильном контенте, печатной, телевизионной или иной "офф-лайн" продукции, письменное разрешение автора обязательно.</p>
+		</footer>
+
+		<div id="schetchiki">
+			<img src="img/schetchik.jpg" alt="счетчики">
+		</div>
+
+	</div> <!-- END wraper  -->
+
+</body>
+</html>

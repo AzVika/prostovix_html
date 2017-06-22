@@ -1,0 +1,661 @@
+/*ALL MAIN*/
+
+@font-face {
+    font-family: ekaterina-v-t; /* Гарнитура шрифта */
+    src: url(../font/ekaterina-velikaya-two.ttf); /* Путь к файлу со шрифтом */
+   }
+
+body {
+	font-size: 16px;
+	font-family: Verdana, arial, sans-serif;
+	line-height: 1.25;
+	color: #333333;
+	background: fixed #6e8c21 url(../img/vix_bg_all_min.jpg) no-repeat top center / cover;
+}
+
+h1, h2 {
+	color: #485919;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 22px;
+	margin-left: 20px;
+}
+
+h3 {
+	text-align: center;
+	font-size: 18px;
+}
+
+a {
+	color: #84bb2c;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+a:hover {
+	color: #485919;
+	text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+#wraper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.font18px {
+	font-size: 18px;
+}
+
+/*HEADER*/
+
+header {
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+	header img {
+		margin-left: 50px;
+	}
+
+	header h2 {
+		display: inline-block;
+		font-size: 36px;
+		font-family: ekaterina-v-t, arial, sans-serif;
+		color: #f6f4f6;
+		margin-left: 30px;
+		margin-bottom: 45px;
+		vertical-align: top;
+	}
+
+nav {
+	float: left;
+	margin-top: 20px;
+}
+
+	nav ul {
+		margin-left: -40px;
+		font-size: 0;
+	}
+
+		nav ul li {
+			display: inline-block;
+			margin: 0 15px 0 0;
+			padding: 5px 20px;
+			background-color: #26341e;
+			border-radius: 10px;
+		}
+
+			nav ul li a {
+				color: #e7f2e9;
+				text-decoration: none;
+				font-size: 18px;
+			}
+
+			nav ul li a:hover {
+				color: #f8ec81;
+			}
+
+#search_stihi {
+	margin-top: 12px;
+	background-color: #26341e;
+	padding: 5px 10px;
+	float: right;
+	border-radius: 10px;
+	box-sizing: border-box;
+	width: 260px;
+}
+	#search_stihi form {
+		margin-top: 2px;
+	}
+
+	#search_stihi input {
+		color: #e7f2e9;
+		background-color: #26341e;
+		width: 160px;
+		padding: 5px 10px;
+		border-radius: 5px;
+	}
+
+	#search_stihi input:focus {
+		background-color: #e7f2e9;
+		color: #26341e;
+		margin-top: -5px;
+	}
+
+	#search_stihi button {
+		background-color: #26341e;
+		border: none;
+		width: 50px;
+	}
+
+	#search_stihi button:hover {
+		cursor: pointer;
+		opacity: 0.75;
+	}
+
+	#search_stihi button img {
+		width: 30px;
+		height: 30px;
+		vertical-align: middle;
+		text-align: left;
+		margin-left: -5px;
+	}
+
+
+
+/*MAIN*/
+
+section, aside {
+	background: #fff url(../img/bg-lightl-891.jpg);
+	border-radius: 20px;
+	padding: 15px 40px 30px;
+	margin: 10px auto;
+	box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
+	
+}
+
+	section div.stishki {
+		margin-left: 20%; 
+	}
+	section div.stishki h1 {
+		margin: 35px 0 40px -10%; 
+	}
+
+	section div.stishki p {
+		line-height: 0.8;
+		font-size: 20px;
+	}
+
+	section div.stishki .date_write {
+		margin: 50px 0 20px -10%;
+		font-style: italic;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	section div.stishki .date_write:before {
+		content: "Дата написания: ";
+		font-size: 14px;
+		font-weight: normal;
+	}
+
+	section div.stishki .theme_stiha {
+		margin: 20px 0 20px -10%;
+		font-size: 18px;
+	}
+
+	section hr {
+		width: 50%;
+		margin: 35px auto;
+		border: 1px dashed #333;
+	}
+
+	section .otherstihi {
+		margin-left: 20%;
+	}
+
+	section h3 {
+		font-size: 18px;
+	}
+
+	section ul {
+		list-style: none;
+	}
+
+	section ul li {
+		margin-top: 15px; 
+	}
+
+
+
+
+aside .podpiska_search {
+	overflow: hidden;
+}
+
+	#search_year_theme p, #stihi_podpiska p {
+		line-height: 0.75;
+		color: #485919;
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+	#search_year_theme, #stihi_podpiska {
+		float: left;
+	}
+
+	#search_year_theme {
+		padding-right: 80px; 
+		padding-top: 10px;
+	}
+
+
+	#search_year_theme p {
+		display: inline-block;
+		line-height: 1;
+	}
+
+	#search_year_theme select {
+		width: 190px;
+		margin-left: 10px;
+		border: 1px solid #485919;
+		font-size: 14px;
+		padding: 3px 10px;
+	}
+
+	#stihi_podpiska span {
+		font-weight: normal;
+	}
+
+	#stihi_podpiska input {
+		color: #485919;
+		font-size: 14px;
+		padding: 5px 10px;
+		border: 1px solid #485919;
+		border-radius: 5px; 
+	}
+
+	#stihi_podpiska button {
+		background-color: #26341e; 
+		color: #fdfdfd;
+		font-size: 18px;
+		padding: 3px 10px;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	#stihi_podpiska button:honer {
+		color: #485919;
+	}
+
+
+/*FOOTER*/
+
+footer {
+	background-color: #26341e;
+	color: #dddddd;
+	font-size: 10px;
+	padding: 5px 15px;
+	border-radius: 10px 10px 0 0;
+}
+
+#schetchiki {
+	width: 700px;
+	margin: 10px auto;
+	padding: 10px;
+	text-align: center;
+}
+
+/*----------Style for spiska stihov------------------*/
+
+.stihi_otbor {
+	width: 44%;
+	float: left;
+	padding: 0 20px;
+}
+
+.stihi_more {
+	padding-bottom: 50px;
+}
+
+
+.proza h1, .proza h2 {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+
+/*---------------@media------------------------------*/
+@media screen and (min-width: 1900px) {
+
+	body {
+		background: fixed #6e8c21 url(../img/vix_bg_all_max.jpg) top center no-repeat;
+	}
+}
+
+@media screen and (max-width: 835px) {
+	#wraper {
+	width: 95%;
+	}
+
+	#search_year_theme p, #stihi_podpiska p {
+		font-size: 16px;
+	}
+
+	#search_year_theme {
+		padding-right: 30px; 
+	}
+
+	.stihi_otbor {
+		padding: 0 1% 2% 0;
+	}
+}
+
+/*--------------WIDTH 790 px------------------*/
+
+@media screen and (max-width: 790px) {
+	
+	section div.stishki {
+		margin-left: 20%; 
+	}
+	section div.stishki h1 {
+		font-size: 22px;
+		margin: 35px 0 40px -10%; 
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	section div.stishki p {
+		font-size: 18px;
+	}
+
+	section div.stishki .date_write {
+		margin: 50px 0 20px -10%;
+		font-size: 16px;
+	}
+
+	section div.stishki .date_write:before {
+		font-size: 12px;
+	}
+
+	section div.stishki .theme_stiha {
+		margin: 20px 0 20px -10%;
+		font-size: 16px;
+	}
+
+	#search_year_theme {
+		padding-right: 20px; 
+	}
+
+	.proza h1, .proza h2 {
+	margin-top: 35px;
+	margin-bottom: 20px;
+	}
+
+	.stihi_more {
+		margin-bottom: -20px;
+	}
+}
+
+/*--------------WIDTH 750 px------------------*/
+
+@media screen and (max-width: 750px) {
+	#search_year_theme, #stihi_podpiska {
+		float: none;
+		margin-left: 20%;
+	}
+
+	#stihi_podpiska:before {
+		content: "--------------------------------------------------";
+		color: #ccc;
+	}
+
+	aside .podpiska_search {
+		margin-left: 25%;
+	}
+
+	#schetchiki {
+	width: 90%;
+	}
+}
+
+/*--------------WIDTH 720 px------------------*/
+
+@media screen and (max-width: 720px) {
+	nav, #search_stihi {
+	float: none;
+	margin-top: 5px;
+	}
+
+	section div.stishki {
+		margin-left: 15%; 
+	}
+	section div.stishki h1 {
+		font-size: 20px;
+		margin: 35px 0 40px -7%; 
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
+	section div.stishki p {
+		font-size: 16px;
+	}
+
+	section div.stishki .date_write {
+		margin: 50px 0 20px -7%;
+		font-size: 14px;
+	}
+
+	section div.stishki .date_write:before {
+		font-size: 12px;
+	}
+
+	section div.stishki .theme_stiha {
+		margin: 20px 0 20px -7%;
+		font-size: 14px;
+	}
+}
+
+/*--------------WIDTH 650 px------------------*/
+
+@media screen and (max-width: 650px) {
+	header {
+	margin-top: 10px;
+	}
+
+	header img {
+		margin-left: 10px;
+		}
+
+	header h2 {
+		font-size: 30px;
+		margin-left: 30px;
+		margin-bottom: 45px;
+		}
+
+	section h3 {
+		font-size: 16px;
+	}
+	a {
+	font-size: 16px;
+	}
+
+	.font18px {
+		font-size: 16px;
+	}
+
+	#stihi_podpiska:before {
+		content: "";
+	}
+
+	#stihi_podpiska {
+		margin-top: 40px;
+	}
+}
+
+/*--------------WIDTH 520 px------------------*/
+
+@media screen and (max-width: 520px) {
+	header img {
+		width: 50px;
+	}
+
+	header h2 {
+		font-size: 26px;
+		margin-left: 30px;
+		margin-bottom: 30px;
+	}
+	section h3 {
+		font-size: 14px;
+	}
+	
+	a {
+	font-size: 14px;
+	}
+
+	#search_stihi {
+		display: none;
+	}
+
+	section div.stishki {
+		margin-left: 10%; 
+	}
+	section div.stishki h1 {
+		font-size: 18px;
+		margin: 20px 0 25px -5%; 
+	}
+
+	h2 {
+		font-size: 15px;
+	}
+
+	section div.stishki p {
+		font-size: 14px;
+	}
+
+	section div.stishki .date_write {
+		margin: 40px 0 15px -5%;
+		font-size: 12px;
+	}
+
+	section div.stishki .date_write:before {
+		font-size: 11px;
+	}
+
+	section div.stishki .theme_stiha {
+		margin: 15px 0 15px -5%;
+		font-size: 12px;
+	}
+
+	.font18px {
+		font-size: 14px;
+	}
+
+	section .otherstihi {
+		margin-left: 10%;
+	}
+
+	.stihi_more {
+	padding-bottom: 30px;
+	}
+
+	.proza h1 {
+		font-size: 18px;
+		margin-top: 30px;
+		margin-bottom: 15px;
+	}
+
+	.proza p {
+		font-size: 14px;
+	}
+
+	.otherstati {
+		margin-left: -30px;
+	}
+}
+
+/*--------------WIDTH 480 px------------------*/
+
+@media screen and (max-width: 480px) {
+	header img {
+		width: 30px;
+	}
+
+	header h2 {
+		font-size: 22px;
+		margin-left: 30px;
+		margin-bottom: 30px;
+	}
+
+	nav ul li {
+			margin-bottom: 5px;
+		}
+	
+	section, aside {
+	padding: 5px 10px 15px;
+	}
+
+	section h3 {
+		font-size: 12px;
+	}
+	
+	a {
+	font-size: 12px;
+	}
+
+	section div.stishki {
+		margin-left: 5%; 
+	}
+	section div.stishki h1 {
+		font-size: 16px;
+		margin: 10px 0 15px -2%; 
+	}
+
+	section div.stishki p {
+		font-size: 12px;
+	}
+
+	section div.stishki .date_write {
+		margin: 20px 0 10px -2%;
+		font-size: 12px;
+	}
+
+	section div.stishki .date_write:before {
+		font-size: 10px;
+	}
+
+	section div.stishki .theme_stiha {
+		margin: 10px 0 10px -2%;
+		font-size: 11px;
+	}
+
+	.font18px {
+		font-size: 12px;
+	}
+
+	section .otherstihi {
+		margin-left: 5%;
+	}
+
+	#search_year_theme p, #stihi_podpiska p {
+		font-size: 14px;
+	}
+}
+
+
+
+/* 
+1024 х 600
+600 х 1024
+
+1024 х 768
+768 х 1024
+
+515 х 295
+295 х 515
+
+320 х 240
+240 х 320
+
+480 х 320
+320 х 480
+
+*/
